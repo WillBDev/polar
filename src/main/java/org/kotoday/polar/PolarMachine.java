@@ -13,9 +13,7 @@ public class PolarMachine {
         int n = (new Scanner(System.in)).nextInt();
         for (int i = 0; i < n; i++) {
             String equation = "";
-            if (type.equalsIgnoreCase("random")) {
-                equation = getRandomEquation().getEquation();
-            } else if (type.equalsIgnoreCase("circle")) {
+            if (type.equalsIgnoreCase("circle")) {
                 equation = getCircle().getEquation();
             } else if (type.equalsIgnoreCase("limacon")) {
                 equation = getLimacon().getEquation();
@@ -23,6 +21,9 @@ public class PolarMachine {
                 equation = getRose().getEquation();
             } else if (type.equalsIgnoreCase("cardiod")) {
                 equation = getCardiod().getEquation();
+            }
+            else {
+                equation = getRandomEquation().getEquation();
             }
             System.out.print((i + 1) + ". " + equation + "\n");
         }
