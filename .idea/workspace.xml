@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23420e80-e3d1-4f34-a101-27b804605225" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Will.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/kotoday/polar/PolarMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/kotoday/polar/PolarMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PolarMachine_jar/PolarMachine.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PolarMachine_jar/PolarMachine.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/kotoday/polar/Equation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/kotoday/polar/Equation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/kotoday/polar/PolarMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/kotoday/polar/PolarMachine.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,14 +38,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2571" />
-          <entry key="txt" value="17" />
+          <entry key="java" value="2637" />
+          <entry key="txt" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2571" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="JAVA" value="2637" />
+          <entry key="PLAIN_TEXT" value="81" />
         </counts>
       </usages-collector>
     </session>
@@ -57,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/kotoday/polar/PolarMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="320">
+              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#251#259#0" expanded="true" />
@@ -76,8 +79,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/kotoday/polar/Equation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="136">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +117,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/org/kotoday/polar/Condition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/kotoday/polar/Equation.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kotoday/polar/types/TypeF.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kotoday/polar/types/TypeE.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kotoday/polar/types/TypeD.java" />
@@ -116,6 +124,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/kotoday/polar/types/TypeB.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kotoday/polar/types/TypeA.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/kotoday/polar/PolarMachine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/kotoday/polar/Equation.java" />
       </list>
     </option>
   </component>
@@ -239,7 +248,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556239614868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556239812909" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -299,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556233815887</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added distinction control to prevent excessive duplicates.">
+      <created>1556239790339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556239790339</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -311,12 +327,12 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24951768" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24951768" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
@@ -339,7 +355,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Minor Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor Changes" />
+    <MESSAGE value="Added distinction control to prevent excessive duplicates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added distinction control to prevent excessive duplicates." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kotoday/polar/Condition.java">
@@ -351,13 +368,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/kotoday/polar/Equation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kotoday/polar/types/TypeF.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -421,10 +431,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/kotoday/polar/Equation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/kotoday/polar/PolarMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="320">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#251#259#0" expanded="true" />
