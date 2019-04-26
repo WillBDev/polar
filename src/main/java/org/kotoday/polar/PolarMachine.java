@@ -45,25 +45,25 @@ public class PolarMachine {
         }
     }
 
-    private static Equation getCircle() {
+    private static PolarEquation getCircle() {
         return new TypeA();
     }
 
-    private static Equation getRose() {
+    private static PolarEquation getRose() {
         return new TypeF();
     }
 
-    private static Equation getCardiod() {
+    private static PolarEquation getCardiod() {
         return new TypeC();
     }
 
-    private static Equation getLimacon() {
-        Equation[] equations = new Equation[]{new TypeB(), new TypeD(), new TypeE()};
+    private static PolarEquation getLimacon() {
+        PolarEquation[] equations = new PolarEquation[]{new TypeB(), new TypeD(), new TypeE()};
         return equations[(int) Math.round(Math.random() * (equations.length - 1))];
     }
 
-    private static Equation getRandomEquation() {
-        Equation[] equations = new Equation[]{new TypeA(), new TypeB(), new TypeC(), new TypeD(), new TypeE(), new TypeF()};
+    private static PolarEquation getRandomEquation() {
+        PolarEquation[] equations = new PolarEquation[]{new TypeA(), new TypeB(), new TypeC(), new TypeD(), new TypeE(), new TypeF()};
         return equations[(int) Math.round(Math.random() * (equations.length - 1))];
     }
 }

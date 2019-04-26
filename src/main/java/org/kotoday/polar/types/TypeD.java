@@ -1,8 +1,8 @@
 package org.kotoday.polar.types;
 
-import org.kotoday.polar.Equation;
+import org.kotoday.polar.PolarEquation;
 
-public class TypeD extends Equation {
+public class TypeD extends PolarEquation {
     public TypeD() {
         super();
     }

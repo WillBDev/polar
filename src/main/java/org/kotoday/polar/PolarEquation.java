@@ -1,6 +1,6 @@
 package org.kotoday.polar;
 
-public class Equation {
+public class PolarEquation {
     private String function = ((int) Math.round(Math.random()) == 1) ? "sin" : "cos";
     private int getSign() {
         return ((int) Math.round(Math.random()) == 1) ? -1 : 1;
