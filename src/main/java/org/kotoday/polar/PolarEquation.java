@@ -1,25 +1,34 @@
 package org.kotoday.polar;
 
-public class PolarEquation {
+public abstract class PolarEquation {
+    private int a, b, c;
     private String function = ((int) Math.round(Math.random()) == 1) ? "sin" : "cos";
+
     private int getSign() {
         return ((int) Math.round(Math.random()) == 1) ? -1 : 1;
     }
+
     protected int genA() {
-        return getSign() * ((int) Math.round(Math.random() * 8) + 1);
+        a = getSign() * ((int) Math.round(Math.random() * 8) + 1);
+        return a;
     }
 
     protected int genB() {
-        return getSign() * ((int) Math.round(Math.random() * 7) + 2);
+        b = getSign() * ((int) Math.round(Math.random() * 7) + 2);
+        return b;
     }
 
     protected int genC() {
-        return (int) Math.round(Math.random() * 3) + 2;
+        c = (int) Math.round(Math.random() * 3) + 2;
+        ;
+        return c;
     }
 
     protected String getFunction() {
         return function;
     }
 
-    public String getEquation() {return null;}
+    protected abstract String getEquation();
+
+
 }

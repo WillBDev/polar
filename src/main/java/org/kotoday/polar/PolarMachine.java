@@ -15,6 +15,7 @@ public class PolarMachine {
         String type = scanner.nextLine();
         System.out.print("Enter how many questions are needed: \n");
         int n = (new Scanner(System.in)).nextInt();
+        System.out.print("\n");
         for (int i = 0; i < n; i++) {
             String equation = fetchEquation(type);
             if (!generatedEquations.contains(equation)) {
