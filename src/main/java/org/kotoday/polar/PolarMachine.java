@@ -20,7 +20,7 @@ public class PolarMachine {
             String equation = fetchEquation(type);
             if (!generatedEquations.contains(equation)) {
                 generatedEquations.add(equation);
-                System.out.print((i + 1) + ". " + equation + "\n");
+                System.out.print((i + 1) + ". r=" + equation + "\n");
             } else {
                 while (generatedEquations.contains(equation)) {
                     equation = fetchEquation(type);
