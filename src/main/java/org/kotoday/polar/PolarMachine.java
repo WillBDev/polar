@@ -2,30 +2,48 @@ package org.kotoday.polar;
 
 import org.kotoday.polar.types.*;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PolarMachine {
     public static void main(String[] args) {
+        ArrayList<String> generatedEquations = new ArrayList<String>();
+        int tries = 0;
+        final int maxAttempts = 200;
         Scanner scanner = new Scanner(System.in);
         System.out.print("What type of equations are needed (Random, Circle, Cardiod, Limacon, Rose): \n");
         String type = scanner.nextLine();
         System.out.print("Enter how many questions are needed: \n");
         int n = (new Scanner(System.in)).nextInt();
         for (int i = 0; i < n; i++) {
-            String equation = "";
-            if (type.equalsIgnoreCase("circle")) {
-                equation = getCircle().getEquation();
-            } else if (type.equalsIgnoreCase("limacon")) {
-                equation = getLimacon().getEquation();
-            } else if (type.equalsIgnoreCase("rose")) {
-                equation = getRose().getEquation();
-            } else if (type.equalsIgnoreCase("cardiod")) {
-                equation = getCardiod().getEquation();
+            String equation = fetchEquation(type);
+            if (!generatedEquations.contains(equation)) {
+                generatedEquations.add(equation);
+                System.out.print((i + 1) + ". " + equation + "\n");
             }
             else {
-                equation = getRandomEquation().getEquation();
+                while (generatedEquations.contains(equation)) {
+                    equation = fetchEquation(type);
+                    tries++;
+                    if (tries == maxAttempts) return;
+                }
+                tries = 0;
             }
-            System.out.print((i + 1) + ". " + equation + "\n");
+        }
+    }
+
+    private static String fetchEquation(String type) {
+        if (type.equalsIgnoreCase("circle")) {
+            return getCircle().getEquation();
+        } else if (type.equalsIgnoreCase("limacon")) {
+            return getLimacon().getEquation();
+        } else if (type.equalsIgnoreCase("rose")) {
+            return getRose().getEquation();
+        } else if (type.equalsIgnoreCase("cardiod")) {
+            return getCardiod().getEquation();
+        }
+        else {
+            return getRandomEquation().getEquation();
         }
     }
 
