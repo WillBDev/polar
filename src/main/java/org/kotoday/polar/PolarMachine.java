@@ -20,8 +20,7 @@ public class PolarMachine {
             if (!generatedEquations.contains(equation)) {
                 generatedEquations.add(equation);
                 System.out.print((i + 1) + ". " + equation + "\n");
-            }
-            else {
+            } else {
                 while (generatedEquations.contains(equation)) {
                     equation = fetchEquation(type);
                     tries++;
@@ -41,8 +40,7 @@ public class PolarMachine {
             return getRose().getEquation();
         } else if (type.equalsIgnoreCase("cardiod")) {
             return getCardiod().getEquation();
-        }
-        else {
+        } else {
             return getRandomEquation().getEquation();
         }
     }
